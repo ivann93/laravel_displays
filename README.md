@@ -15,4 +15,6 @@ Installation Instructions.
 
 7. Run "php aritsan serve"
 
+8. Run "php artisan storage:link"
+
 That's all.
