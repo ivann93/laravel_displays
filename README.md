@@ -13,8 +13,8 @@ Installation Instructions.
 
 6. Run "php artisan migrate:fresh --seed"
 
-7. Run "php aritsan serve"
+7. Run "php artisan storage:link" 
 
-8. Run "php artisan storage:link"
+8. Run "php artisan serve"
 
 That's all.
