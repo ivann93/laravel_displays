@@ -44,14 +44,12 @@ class DisplayController extends Controller
 
     public function show($id)
     {
-        
         $display = Display::whereId($id)->first();
         if($display) {
             return view('show',compact('display'));
         } else {
             abort(404);
         }
-
     }
 
     public function destroy($id)

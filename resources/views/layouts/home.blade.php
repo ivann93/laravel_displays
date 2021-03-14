@@ -101,7 +101,6 @@
             font-weight: 700;
             margin-bottom: .9rem;
         }
-
     </style>
 
     @yield('extra-head')
@@ -135,8 +134,8 @@
                 text: "{{ $message }}",
                 confirmButtonText: "Sweet!"
             })
-
         </script>
+        
         @php
         session()->forget('message');
         session()->forget('status');
