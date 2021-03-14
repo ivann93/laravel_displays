@@ -20,7 +20,7 @@ Route::redirect('/', '/displays');
 Route::resource('displays', DisplayController::class);
 
 
-Route::prefix('new')->group(function() {
-    Route::get('/reseller', [App\Http\Controllers\ResellerController::class, 'new']);
-    Route::post('/reseller', [App\Http\Controllers\ResellerController::class, 'add'])->name('new_reseller');
-});
+// Route::prefix('new')->group(function() {
+   // Route::get('/reseller', [App\Http\Controllers\ResellerController::class, 'new']);
+   // Route::post('/reseller', [App\Http\Controllers\ResellerController::class, 'add'])->name('new_reseller');
+// });
