@@ -21,16 +21,6 @@ tr:nth-child(even) {
 </style>
     <div class="container">
         <center><h1>All Displays</h1></center>
-            {{-- <div class="sidebar">
-                <p>Reseller List</p>
-                <a class="{{ !isset($current_reseller) ? 'selected' : '' }}" href="/">All resellers</a>
-                @foreach ($resellers as $reseller)
-                    <a href="/reseller/{{ $reseller->id }}"
-                        class="{{ isset($current_reseller) && $current_reseller->id === $reseller->id ? 'selected' : '' }}">
-                        {{ $reseller->name }}
-                    </a>
-                @endforeach
-            </div> --}}
             <div class="content-wrapper">
                 <div class="row">
                     <table>
