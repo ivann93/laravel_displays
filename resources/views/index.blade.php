@@ -30,18 +30,18 @@
                         <th>Delete</th>
                       </tr>
                       <tr>
-                        @foreach ($displays as $display)
+                      @foreach ($displays as $display)
                           <td><a href="{{ route('displays.show', $display->id) }}">{{ $display->name }}</a></td>
-                          <td><img class="display-file_path" src="/storage/uploads/{{ $display->file_path }}" /></td>
+                          <td><img class="display-file_path" src="/storage/uploads/{{ $display->file_path }}" width="100px" height="100px" /></td>
                           <form method="POST" action="{{ route('displays.destroy', $display->id) }}">
                               <td>
                               @method('DELETE')
                               @csrf
                               <button type="submit" class="button is-link">Delete Display</button>
                               </td> 
-                          </form>
-                        @endforeach
+                          </form>  
                       </tr>
+					  @endforeach
                     </table>
                 </div>
             </div>

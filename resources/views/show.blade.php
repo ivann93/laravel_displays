@@ -27,8 +27,9 @@
   <center><h1 class="title"> Display Details </h1></center><br>
   <table>
     <tr>
-    	<th>Id</th>
+      <th>Id</th>
       <th>Name</th>
+	  <th>Image</th>
       <th>Reseller ID</th>
       <th>Serial Number</th>
       <th>Type</th>
@@ -36,6 +37,7 @@
     <tr>
       <td> {{ $display->id }}</td>
   	  <td> {{ $display->name }}</td>
+	  <td><img class="display-file_path" src="/storage/uploads/{{ $display->file_path }}" /></td>
       <td> {{ $display->reseller_id }}</td>
       <td> {{ $display->serial_number }}</td>
       <td> {{ $display->type }}</td>
