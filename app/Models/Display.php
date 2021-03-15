@@ -12,6 +12,6 @@ class Display extends Model
 
     public function reseller()
     {
-        return $this->belongsTo(Display::class);
+        return $this->belongsTo(Reseller::class);
     }
 }
